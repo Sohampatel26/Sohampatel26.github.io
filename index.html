@@ -1,80 +1,336 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
   <!-- Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="Soham Patel - Data Scientist and Machine Learning Engineer" />
-  <meta name="author" content="Soham Patel" />
-  <meta name="keywords" content="data science, machine learning, artificial intelligence, deep learning" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Soham Patel - Data Scientist and Machine Learning Engineer">
+  <meta name="author" content="Soham Patel">
+  <meta name="keywords" content="data science, machine learning, artificial intelligence, deep learning">
 
   <!-- Title -->
   <title>Soham Patel | Data Scientist & ML Engineer</title>
   <!-- Favicon -->
-  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
 
-  <!-- Materialize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#2196F3">
+  <meta name="msapplication-navbutton-color" content="#2196F3">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- Custom CSS Improvements -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .btn-floating {
+      margin-right: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-floating:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        padding: 60px 0;
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Soham Patel | Data Scientist & Machine Learning Engineer</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126939217-2');
+  </script>
+
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Soham Patel | Data Scientist & Machine Learning Engineer" />
+  <meta property="og:description" content="Data Scientist & ML Engineer" />
+  <meta property="og:url" content="https://sohamhp.github.io/" />
+  <meta property="og:site_name" content="Soham Patel | Data Scientist & Machine Learning Engineer" />
+  <meta property="og:image" content="/assets/img/profile.jpg" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@sohamhp" />
+  <meta name="twitter:title" content="Data Scientist & Machine Learning Enthusiast" />
+  <meta name="twitter:description" content="Passionate about Machine Learning & Data Analysis" />
+  <meta name="author" content="Soham Patel" />
+  <meta name="description" content="Data Scientist with expertise in ML & AI, currently pursuing a Master's in Data Science." />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f0f0;
+    }
+    nav {
+      background-color: #2c3e50;
+    }
+    .side-nav.fixed {
+      background-color: #34495e;
+    }
+    .side-nav.fixed a {
+      color: #ecf0f1;
+    }
+    .side-nav.fixed a:hover {
+      color: #1abc9c;
+    }
+    .section-title {
+      background-color: #1abc9c;
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .section {
+      padding: 50px 0;
+    }
+    .card {
+      border-radius: 10px;
+    }
+    .btn-floating {
+      background-color: #1abc9c !important;
+    }
+    .btn-floating:hover {
+      background-color: #16a085 !important;
+    }
+    .full-height {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    .icon-btn {
+      margin-right: 10px;
+      font-size: 1.5em;
+      color: #1abc9c;
+    }
+    .content {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .typing {
+      color: #e74c3c;
+    }
+    .page-title {
+      background-color: #1abc9c;
+      padding: 15px;
+      border-radius: 5px;
+      color: white;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .waves-effect.waves-dark .fa {
+      color: #ecf0f1;
+    }
+    .card-content h4 {
+      color: #2c3e50;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="nav-wrapper teal darken-2">
-      <a href="#intro" class="brand-logo center">Soham Patel</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  
+  <!-- Navigation Menu-->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="/assets/img/soham-pic.jpg" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="fa fa-user small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text"><i
+            class="fa fa-briefcase small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="fa fa-folder-open small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="fa fa-bar-chart small"></i><span>Skills</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="fa fa-graduation-cap small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="fa fa-envelope small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Soham's resume in a new tab" href="https://sohamhp.github.io/assets/resume/Soham_Patel_Resume.pdf" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="fa fa-file-pdf-o small"></i><span>Resume</span></a>
+      </li>
+    </ul>
   </nav>
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
 
-  <!-- Intro Section -->
-  <section id="intro" class="section teal lighten-5 center-align">
-    <img src="assets/img/soham-pic.jpg" alt="Soham Patel" class="circle responsive-img" width="150" />
-    <h1>Hi, I'm Soham Patel</h1>
-    <h5 class="typing"></h5>
-    <a href="#contact" class="btn-large teal darken-3 waves-effect waves-light">Get in Touch</a>
+  <!-- Introduction Section -->
+  <section id="intro" class="section scrollspy full-height">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="col-md-9">
+        <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+          <div class="caption">
+            <h2>Hi, I'm <span style="color:#1abc9c">Soham Patel.</span></h2>
+            <h5>A <span class="typing" style="font-weight: 300;"></span></h5>
+            <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving complex and challenging real-world problems using AI & ML.</h5>
+          </div>
+          <div class="social">
+            <a href="https://linkedin.com/in/soham-patel" target="_blank">
+              <button class="icon-btn">
+                <i class="fa fa-linkedin"></i>
+              </button>
+            </a>
+            <a href="https://github.com/sohamhp" target="_blank">
+              <button class="icon-btn">
+                <i class="fa fa-github"></i>
+              </button>
+            </a>
+          </div>
+          <div class='buttons'>
+            <a href="#about" class="readme">Read More</a>
+            <a href="#contact" class="contactme">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="section scrollspy">
-    <div class="container">
-      <h3>About Me</h3>
+    <h3 class="page-title section-title">About</h3>
+    <div class="container flow-text">
+      <blockquote>
+        <h4>
+          Data Scientist & Machine Learning Engineer with a passion for solving real-world problems through data-driven approaches.
+        </h4>
+      </blockquote>
       <p>
-        I am a Master of Data Science student at the University of California, Irvine, with a passion for solving real-world problems through
-        AI and machine learning.
+        I am currently pursuing my Master's in Data Science at the University of California, Irvine. I enjoy problem-solving, coding, and applying AI solutions to challenging problems. I have worked extensively with technologies like Python, R, TensorFlow, Azure, AWS, and more during my academic and professional career.
+      </p>
+      <ul>
+        <li><b>Languages:</b> Python, R, C, C++, SQL, MATLAB</li>
+        <li><b>ML & Tools:</b> TensorFlow, PyTorch, Keras, scikit-learn, Tableau, Apache Spark, Docker, Jenkins, CI/CD, AWS, Azure</li>
+      </ul>
+      <p>
+        I'm always looking to expand my skills and take on new challenges. I strive to make an impact by building innovative and practical solutions to complex problems.  
       </p>
     </div>
   </section>
 
   <!-- Experience Section -->
   <section id="experience" class="section scrollspy">
+    <h3 class="page-title section-title">Experience</h3>
     <div class="container">
-      <h3>Experience</h3>
+      <!-- LiveGood Inc -->
       <div class="card">
         <div class="card-content">
-          <span class="card-title teal-text">Machine Learning Intern</span>
-          <p><strong>LiveGood Inc.</strong> | Sep 2024 - Dec 2024</p>
-          <ul>
-            <li>Developed Autoencoder models to analyze health metrics.</li>
-            <li>Enhanced model deployment pipelines with Azure and PowerBI.</li>
-          </ul>
+          <div class="row">
+            <div class="col s12 m2">
+              <img alt="LiveGood Inc" src="/assets/img/livegood-logo.png" class="responsive-img center-block" />
+            </div>
+            <div class="col s12 m10">
+              <span class="card-title teal-text hoverline">LiveGood Inc.</span>
+              <div class="role brown-text text-darken-2">Machine Learning Intern</div>
+              <ul>
+                <li>Developed Autoencoder and MLP models to analyze health metrics, achieving a 20% improvement in accuracy for health trend predictions.</li>
+                <li>Enhanced Azure-based model deployment pipeline with real-time data visualization using PowerBI, leading to actionable public health strategy adjustments.</li>
+                <li>Automated data preprocessing using Python, which improved data quality and model reliability by 30%.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-action">
+          <span>Sep 2024 - Dec 2024 | Irvine, CA</span>
+        </div>
+      </div>
+
+      <!-- UCI-Health -->
+      <div class="card">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12 m2">
+              <img alt="UCI Health" src="/assets/img/uci-health-logo.png" class="responsive-img center-block" />
+            </div>
+            <div class="col s12 m10">
+              <span class="card-title teal-text hoverline">UCI-Health</span>
+              <div class="role brown-text text-darken-2">Data Science Research Intern</div>
+              <ul>
+                <li>Built an AWS-powered ETL pipeline, enhancing data integration and analytics, using Python for scripting and AWS Lambda for real-time data processing.</li>
+                <li>Applied TensorFlow and Keras to refine predictive models for patient diagnosis, improving model accuracy by 40%.</li>
+                <li>Conducted A/B testing on model variants to optimize predictive performance and ensure robustness in clinical environments.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-action">
+          <span>Jun 2024 - Sep 2024 | Orange, CA</span>
         </div>
       </div>
     </div>
@@ -82,45 +338,104 @@
 
   <!-- Projects Section -->
   <section id="projects" class="section scrollspy">
+    <h3 class="page-title section-title">Projects</h3>
     <div class="container">
-      <h3>Projects</h3>
-      <div class="card">
-        <div class="card-content">
-          <span class="card-title teal-text">PFAS Analysis</span>
-          <p>
-            Used ML models like Decision Trees and Random Forest for environmental data analysis. Created visualizations with Tableau.
-          </p>
+      <div class="row">
+        <!-- PFAS Analysis -->
+        <div class="col s12 m6 l4">
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img alt="PFAS Analysis" src="/assets/img/project-pfas.png" style="height: 100%; width: 100%" class="activator" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator teal-text hoverline">PFAS Analysis using Advanced ML<i class="fa fa-chevron-up right"></i></span>
+              <p>Analyzed PFAS distribution using Apache Spark for distributed big data processing and applied ML models like Decision Trees and Random Forests.</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+              <ul>
+                <li>Achieved 85% accuracy in forecasting regional spread using CNNs and VAEs.</li>
+                <li>Applied GANs for high-resolution mapping, aiding environmental policy decisions.</li>
+                <li>Automated data pipelines using Python and R, processing over 1 million data points for real-time environmental insights.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- EMPATH AI -->
+        <div class="col s12 m6 l4">
+          <div class="card medium">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img alt="EMPATH AI" src="/assets/img/project-empath.png" style="height: 100%; width: 100%" class="activator" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator teal-text hoverline">EMPATH AI<i class="fa fa-chevron-up right"></i></span>
+              <p>Developed an emotional support system using LLMs and BERT-LSTM models.</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+              <ul>
+                <li>Built a BERT-LSTM model with RAG using Pinecone for sentiment analysis on user messages, enhancing real-time mental health insights.</li>
+                <li>Integrated fine-tuned DistilGPT model with ChatGPT 3.5 to provide personalized coping mechanisms.</li>
+                <li>Implemented real-time feedback loop using LangChain and Pinecone, allowing continuous model fine-tuning based on evolving user sentiment data.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section scrollspy">
-    <div class="container center-align">
-      <h3>Contact Me</h3>
-      <p>Email: <a href="mailto:sohamhp@uci.edu">sohamhp@uci.edu</a></p>
-      <p>Phone: <a href="tel:+19296427699">(929) 642-7699</a></p>
+  <section id="contact" class="section scrollspy full-height">
+    <h3 class="page-title section-title">Contact</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <p>
+            <a href="mailto:sohamhp@uci.edu" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-envelope"></i></a>
+            <a href="mailto:sohamhp@uci.edu" target="_blank">sohamhp@uci.edu</a>
+          </p>
+          <p>
+            <a href="tel:+19296427699" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-phone"></i></a>
+            <span>+1 (929) 642-7699</span>
+          </p>
+          <p>
+            <a href="https://github.com/sohamhp" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-github"></i></a>
+            <a href="https://github.com/sohamhp" target="_blank">github.com/sohamhp</a>
+          </p>
+          <p>
+            <a href="https://linkedin.com/in/soham-patel" target="_blank" class="btn-floating btn-large waves-effect waves-light"><i class="fa fa-linkedin"></i></a>
+            <a href="https://linkedin.com/in/soham-patel" target="_blank">linkedin.com/in/soham-patel</a>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="assets/js/typed.min.js"></script>
-  <script>
-    // Initialize Sidenav
-    document.addEventListener("DOMContentLoaded", function () {
-      M.Sidenav.init(document.querySelectorAll(".sidenav"));
-    });
-
-    // Typed.js
-    const typed = new Typed(".typing", {
-      strings: ["Data Scientist", "Machine Learning Engineer", "Problem Solver"],
-      typeSpeed: 100,
-      backSpeed: 50,
+  <!-- Typed.js -->
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Data Scientist", "Machine Learning Engineer", "Fast Learner"],
       loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Materialize - Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.scrollspy').scrollSpy();
+      $('.button-collapse').sideNav();
     });
   </script>
 </body>
 
 </html>
+
+
