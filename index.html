@@ -399,7 +399,6 @@
 </div>
 </section>
 
-    <!-- Fourth Section: Projects -->
 <!-- Fourth Section: Projects -->
 <section id="projects" class="section scrollspy">
   <h3 class="page-title white-text teal">Projects</h3>
@@ -419,11 +418,11 @@
           <div class="card-reveal">
             <span class="card-title grey-text"><small>Key Features</small><i class="mdi-navigation-close right"></i></span>
             <ul>
-              <li><b>Tools:</b> Python, R, scikit-learn, Apache Spark, AWS Lambda, AWS Elastic Load Balancing</li>
-              <li>Developed predictive models to dynamically manage and dispatch emergency resources, reducing response times by up to 25%.</li>
-              <li>Utilized AWS Lambda for scalable real-time data processing and AWS Elastic Load Balancing to ensure system reliability and uptime during peak loads.</li>
-              <li>Implemented robust data pipelines that handle and analyze real-time emergency data across distributed systems.</li>
-              <li><a href=https://doi.org/10.1063/5.0217352>Read the accompanying research paper</a></li>
+              <li><b>Tools:</b> Python, R, XGBoost, LSTM, Apache Spark, AWS (Lambda, ElastiCache, RDS)</li>
+              <li>Implemented predictive modeling using XGBoost and LSTM for real-time emergency dispatch operations.</li>
+              <li>Processed real-time data using Apache Spark to enhance system responsiveness during peak load.</li>
+              <li>Reduced response times by 30% and ensured scalability with AWS cloud services like Lambda and RDS.</li>
+              <li><a href="https://doi.org/10.1063/5.0217352">Read the accompanying research paper</a></li>
             </ul>
           </div>
         </div>
@@ -442,9 +441,10 @@
           <div class="card-reveal">
             <span class="card-title grey-text"><small>Key Features</small><i class="mdi-navigation-close right"></i></span>
             <ul>
-              <li><b>Tools:</b> Python, TensorFlow, BERT</li>
-              <li>Employs advanced NLP techniques to analyze user input and deliver empathetic and contextually relevant support.</li>
-              <li>Designed to provide real-time emotional support across various digital platforms.</li>
+              <li><b>Tools:</b> Python, LangChain, Pinecone, BERT-LSTM, DistilGPT, RAG</li>
+              <li>Developed a BERT-LSTM model integrated with RAG for sentiment analysis, enhancing therapeutic response accuracy by 35%.</li>
+              <li>Fine-tuned DistilGPT and ChatGPT-3.5 to deliver personalized emotional support.</li>
+              <li>Utilized LangChain and Pinecone for a real-time feedback loop, enabling continuous model improvement.</li>
             </ul>
           </div>
         </div>
@@ -463,9 +463,10 @@
           <div class="card-reveal">
             <span class="card-title grey-text"><small>Key Features</small><i class="mdi-navigation-close right"></i></span>
             <ul>
-              <li><b>Tools:</b> RAG, Gemini Pro</li>
-              <li>Developed to engage users with thoughtful responses and philosophical guidance based on a wide range of religious doctrines.</li>
-              <li>Supports interactive dialogue with users, providing contextually relevant advice.</li>
+              <li><b>Tools:</b> Python, LangChain, Pinecone, RAG, GPT-4</li>
+              <li>Trained RAG on diverse religious texts using Pinecone for semantic search and vector-based indexing.</li>
+              <li>Enabled GPT-4 to provide thoughtful, contextually relevant responses to philosophical and religious queries.</li>
+              <li>Implemented LangChain to create a modular, scalable architecture for personalized interactions.</li>
             </ul>
           </div>
         </div>
@@ -484,9 +485,10 @@
           <div class="card-reveal">
             <span class="card-title grey-text"><small>Key Features</small><i class="mdi-navigation-close right"></i></span>
             <ul>
-              <li><b>Tools:</b> Python, SQL</li>
-              <li>Facilitates the creation and optimization of complex SQL queries for non-expert users, improving productivity and accuracy.</li>
-              <li>Designed for integration with existing database management systems to enhance data retrieval and analysis.</li>
+              <li><b>Tools:</b> Python, LangChain, OpenAI GPT-4, SQL</li>
+              <li>Built a system to dynamically generate MCQs from user-uploaded documents using GPT-4.</li>
+              <li>Incorporated LangChain for modular query processing and SQL for database integration.</li>
+              <li>Enhanced user experience with interactive UI for document upload and question customization.</li>
             </ul>
           </div>
         </div>
@@ -500,20 +502,42 @@
           </div>
           <div class="card-content">
             <span class="card-title activator teal-text hoverline">BIP<i class="mdi-navigation-more-vert right"></i></span>
-            <p> Bayesian hierarchial model generalised to predict Insuarance rates across all regions in US.</p>
+            <p> Bayesian hierarchial model generalised to predict Insurance rates across all regions in US.</p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text"><small>Key Features</small><i class="mdi-navigation-close right"></i></span>
             <ul>
-              <li><b>Tools:</b> Python, Bayesian Statistics</li>
-              <li>Utilizes Bayesian inference to model and analyze complex risk factors affecting insurance prices.</li>
-              <li>Incorporates real-time data updates to refine predictions and adapt to changing market conditions.</li>
-              <li>Provides insurers with a powerful tool for risk assessment and pricing strategy formulation.</li>
+              <li><b>Tools:</b> Python, R, Bayesian Statistics</li>
+              <li>Developed a Bayesian hierarchical model to predict insurance rates with high accuracy across regions.</li>
+              <li>Utilized R for data preprocessing and visualization of regional trends.</li>
+              <li>Implemented scalable data pipelines to handle diverse regional data effectively.</li>
             </ul>
           </div>
         </div>
       </div>
-    
+
+      <!-- Healthcare Demand Forecasting -->
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Healthcare Demand Forecasting" src="assets/img/healthcare.png" style="height: 100%; width: 100%" class="activator" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">Healthcare Demand Forecasting<i class="mdi-navigation-more-vert right"></i></span>
+            <p>Forecasting healthcare resource demand using time series analysis.</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text"><small>Key Features</small><i class="mdi-navigation-close right"></i></span>
+            <ul>
+              <li><b>Tools:</b> Python, ARIMA, Pandas, AWS</li>
+              <li>Engineered a forecasting model using ARIMA with 95% accuracy to predict healthcare resource demand.</li>
+              <li>Optimized data preprocessing using Pandas to ensure high-quality inputs for time series analysis.</li>
+              <li>Integrated model outputs with AWS for scalability and real-time accessibility.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
